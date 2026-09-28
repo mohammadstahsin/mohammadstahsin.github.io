@@ -5,8 +5,8 @@ A simple static academic portfolio designed for GitHub Pages.
 ## Pages
 
 - Home
-- Education & Experience
 - Publications
+- Education & Experience
 - Projects
 - CV
 

@@ -6,13 +6,23 @@
   <meta name="description" content="Publications - YOUR NAME">
   <title>Publications | YOUR NAME</title>
   <link rel="stylesheet" href="style.css">
+  <script>
+    (function () {
+      const saved = localStorage.getItem("theme");
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.dataset.theme = saved || (prefersDark ? "dark" : "light");
+    })();
+  </script>
 </head>
 <body>
 
 <header>
   <div class="container nav">
     <a class="brand" href="index.html">YOUR NAME</a>
-    <button class="menu-button" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <div class="nav-actions">
+      <button class="theme-button" type="button" aria-label="Switch color theme" title="Switch color theme">☾</button>
+      <button class="menu-button" aria-label="Open navigation" aria-expanded="false">☰</button>
+    </div>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="publications.html">Publications</a></li>

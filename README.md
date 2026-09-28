@@ -1,45 +1,29 @@
-# Academic Portfolio Website
+# Mohammad Tahsin - Academic Portfolio
 
-A simple static academic portfolio designed for GitHub Pages.
+Static academic portfolio for GitHub Pages.
 
-## Pages
+## Main pages
 
-- Home
-- Publications
-- Education & Experience
-- Projects
-- CV
+- `index.html` - homepage and research overview
+- `publications.html` - publications from the current CV
+- `education-experience.html` - education, research, professional experience, skills, awards, and service
+- `projects.html` - selected research outputs and current projects
+- `cv.html` - embedded CV with open/download links
+- `cv.pdf` - current CV
 
-## First things to edit
+## Editing the site
 
-Search all files for these placeholders and replace them:
+For simple content changes, edit the relevant `.html` file directly in GitHub and commit the change.
 
-- `YOUR NAME`
-- `YN`
-- `YOUR FIELD`
-- `YOUR RESEARCH AREA`
-- `YOUR_USERNAME`
-- `you@example.com`
-- `YOUR_GOOGLE_SCHOLAR_LINK`
-- `YOUR_LINKEDIN_LINK`
-- `PROFESSOR_PROJECT_LINK`
-- `PROFESSOR NAME`
-- publication/project placeholders
+Shared styling is in `style.css`. Shared behavior such as dark mode, mobile navigation, active navigation, and the footer year is in `script.js`.
 
-## CV
+## GitHub Pages
 
-1. Put your PDF in this folder.
-2. Rename it `cv.pdf`.
-3. In `cv.html`, replace every `cv-placeholder.pdf` with `cv.pdf`.
+This site is designed to be served from a repository named `<your-github-username>.github.io` with GitHub Pages configured to deploy from the `main` branch and `/ (root)`.
 
-## Publish
+## Still worth adding later
 
-Create a GitHub repository named:
-
-`YOUR_USERNAME.github.io`
-
-Upload all files from this folder to the root of that repository.
-
-Then open:
-
-`https://YOUR_USERNAME.github.io`
+- A professional headshot, if desired
+- Google Scholar URL
+- LinkedIn URL
+- A direct external URL for your advisor/professor's lab or project page, if you want it displayed separately from publication/project outputs

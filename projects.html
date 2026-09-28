@@ -3,83 +3,122 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Projects - YOUR NAME">
-  <title>Projects | YOUR NAME</title>
+  <meta name="description" content="Selected and current research projects by Mohammad Tahsin in biomedical AI, explainable machine learning, federated learning, and cybersecurity.">
+  <meta name="author" content="Mohammad Tahsin">
+  <title>Projects | Mohammad Tahsin</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
   <script>
     (function () {
       const saved = localStorage.getItem("theme");
-      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
       document.documentElement.dataset.theme = saved || (prefersDark ? "dark" : "light");
     })();
   </script>
 </head>
 <body>
-
-<header>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header">
   <div class="container nav">
-    <a class="brand" href="index.html">YOUR NAME</a>
-    <div class="nav-actions">
-      <button class="theme-button" type="button" aria-label="Switch color theme" title="Switch color theme">☾</button>
-      <button class="menu-button" aria-label="Open navigation" aria-expanded="false">☰</button>
-    </div>
-    <ul class="nav-links">
+    <a class="brand" href="index.html" aria-label="Mohammad Tahsin home">Mohammad Tahsin</a>
+    <ul class="nav-links" id="primary-navigation">
       <li><a href="index.html">Home</a></li>
       <li><a href="publications.html">Publications</a></li>
-      <li><a href="education-experience.html">Education & Experience</a></li>
+      <li><a href="education-experience.html">Education &amp; Experience</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="cv.html">CV</a></li>
     </ul>
+    <div class="nav-actions">
+      <button class="theme-button" type="button" aria-label="Switch to dark mode" title="Switch color theme">☾</button>
+      <button class="menu-button" type="button" aria-label="Open navigation" aria-controls="primary-navigation" aria-expanded="false">☰</button>
+    </div>
   </div>
 </header>
-
-
-<main class="container">
+<main id="main-content" class="container">
   <section class="page-title">
-    <div class="eyebrow">Research portfolio</div>
+    <p class="eyebrow">Research portfolio</p>
     <h1>Projects</h1>
-    <p class="lead">Research projects, collaborations, code, datasets, and work completed with faculty.</p>
+    <p class="lead">Selected published work and active research projects from the AI-Based Autonomous System Research Lab.</p>
   </section>
 
   <section class="section">
-    <div class="grid">
-      <article class="card">
-        <span class="badge">Professor's Project</span>
-        <h3>Project Title</h3>
-        <p>
-          Describe the project you completed with your professor. Explain your role,
-          the research problem, the methods you used, and what you produced.
-        </p>
-        <p class="meta">Supervisor: Prof. PROFESSOR NAME · University / Lab</p>
-        <a class="button primary" href="PROFESSOR_PROJECT_LINK" target="_blank" rel="noopener">
-          Open project
-        </a>
+    <div class="section-heading">
+      <div><p class="eyebrow">Published work</p><h2>Selected research projects</h2></div>
+      <p>These links point to public research outputs associated with my project work.</p>
+    </div>
+    <div class="grid project-highlight-grid">
+      <article class="card project-card">
+        <span class="badge">Biomedical AI</span>
+        <h3>X-Beat: Explainable ECG Image Classification</h3>
+        <p>Explainable machine learning for ECG image classification, developed with H. Y. Adarbah and A. Noore.</p>
+        <a class="text-link" href="https://arxiv.org/abs/2609.22631" target="_blank" rel="noopener noreferrer">Open project output ↗</a>
       </article>
-
-      <article class="card">
-        <span class="badge">Research</span>
-        <h3>Another Research Project</h3>
-        <p>Brief project description. Mention tools, methods, datasets, or results.</p>
-        <a href="YOUR_PROJECT_LINK">Project page / repository</a>
+      <article class="card project-card">
+        <span class="badge">Biomedical Signals</span>
+        <h3>Robust Beat-Level Arrhythmia Detection</h3>
+        <p>A lightweight channel-attention CNN for robust beat-level arrhythmia detection, published in IEEE Access.</p>
+        <a class="text-link" href="https://doi.org/10.1109/ACCESS.2026.3686810" target="_blank" rel="noopener noreferrer">Open project output ↗</a>
       </article>
-
-      <article class="card">
-        <span class="badge">Code / Data</span>
-        <h3>Technical Project</h3>
-        <p>Describe a codebase, analysis, model, dataset, or reproducible research project.</p>
-        <a href="YOUR_GITHUB_REPOSITORY_LINK">GitHub repository</a>
+      <article class="card project-card">
+        <span class="badge">Smart Systems</span>
+        <h3>Smart-Home Sensor Placement Decision Support</h3>
+        <p>Sensor-placement decision support combined with GRU-based energy forecasting, published at IEEE ICCE 2026.</p>
+        <a class="text-link" href="https://doi.org/10.1109/ICCE67443.2026.11449749" target="_blank" rel="noopener noreferrer">Open project output ↗</a>
       </article>
     </div>
   </section>
+
+  <section class="section" id="current-projects">
+    <div class="section-heading">
+      <div><p class="eyebrow">Active research</p><h2>Current projects</h2></div>
+      <p>Projects are labeled by the status listed in my current CV.</p>
+    </div>
+    <div class="project-list">
+      <article class="project-row">
+  <div><span class="badge">Under review</span><h3>Zero-Day Intrusion Detection in Consumer Healthcare IoMT with Conformal Rejection</h3><p class="meta">Healthcare IoMT · Intrusion detection · Conformal rejection</p></div>
+</article><article class="project-row">
+  <div><span class="badge">Under review</span><h3>AI-Driven Sensor Placement and Wireless Sensor Deployment: A PRISMA-Guided Systematic Review of Optimization Methods, Validation Maturity, and Benchmarking</h3><p class="meta">Systematic review · Sensor placement · Optimization</p></div>
+</article><article class="project-row">
+  <div><span class="badge">Under review</span><h3>CGLGCTNet: A Lightweight Cross-Gated Local Global CNN Transformer Network for Plant Disease Classification</h3><p class="meta">Computer vision · CNN-Transformer · Plant disease</p></div>
+</article><article class="project-row">
+  <div><span class="badge">Under review</span><h3>FetalSANet: A Lightweight, Explainable Spatial-Attention MobileNetV2 Framework for Fetal Ultrasound Plane Classification</h3><p class="meta">Medical imaging · Explainable AI · Ultrasound</p></div>
+</article><article class="project-row">
+  <div><span class="badge">Under review</span><h3>FedQDFU: Non-IID Federated Quantum Learning for Diabetic Foot Ulcer Classification from Deep Image Features</h3><p class="meta">Federated learning · Quantum ML · Medical imaging</p></div>
+</article><article class="project-row">
+  <div><span class="badge">Under review</span><h3>Data-Local Soft-Voting Ensemble for Intrusion Detection in Consumer IoT Sensor-Gateway Networks</h3><p class="meta">IoT security · Ensemble learning · Intrusion detection</p></div>
+</article><article class="project-row">
+  <div><span class="badge">Under review</span><h3>Explainable Evasive PDF Malware Screening with TabPFN for Consumer Applications</h3><p class="meta">Malware detection · Explainable AI · Tabular learning</p></div>
+</article><article class="project-row">
+  <div><span class="badge">Under review</span><h3>Systematic Evaluation and Explainability Analysis of Transfer Learning Models for Maize Leaf Disease Classification</h3><p class="meta">Transfer learning · Explainability · Plant disease</p></div>
+</article><article class="project-row">
+  <div><span class="badge">Under review</span><h3>Interpretable Dual-Branch ConvNeXt-Transformer Fusion for Fine-Grained Acute Lymphoblastic Leukemia Classification</h3><p class="meta">Medical imaging · Transformer fusion · Interpretability</p></div>
+</article><article class="project-row">
+  <div><span class="badge">Under review</span><h3>PneuShield-FL: Differentially Private Federated Pneumonia Screening with Deep CXR Features and Explainable AI</h3><p class="meta">Federated learning · Privacy · Chest X-ray</p></div>
+</article><article class="project-row">
+  <div><span class="badge">In preparation</span><h3>SafeSNM-QFed: A Leakage-Safe Stacked CNN-BFO Framework for Brain Tumor MRI Classification with Quantum and Federated Learning Extensions</h3><p class="meta">Brain MRI · Federated learning · Quantum ML</p></div>
+</article><article class="project-row">
+  <div><span class="badge">In preparation</span><h3>Energy-Regularized Latent Synthetic Exposure for Open-Set Recognition of Clinical Tabular Data</h3><p class="meta">Open-set recognition · Clinical data · Risk-aware ML</p></div>
+</article>
+    </div>
+  </section>
+
+  <section class="section section-tight">
+    <div class="callout">
+      <div>
+        <p class="eyebrow">Collaboration</p>
+        <h2>Research affiliation</h2>
+        <p>I am a Graduate Research Assistant in the AI-Based Autonomous System Research Lab at Texas A&amp;M University-Kingsville.</p>
+      </div>
+      <a class="button secondary" href="mailto:mohammad.tahsin@students.tamuk.edu">Contact me</a>
+    </div>
+  </section>
 </main>
-
-
 <footer>
-  <div class="container">
-    © <span id="year"></span> YOUR NAME · Built with HTML/CSS and hosted on GitHub Pages.
+  <div class="container footer-inner">
+    <span>© <span id="year"></span> Mohammad Tahsin</span>
+    <span>Built with HTML, CSS, and JavaScript. Hosted with GitHub Pages.</span>
   </div>
 </footer>
 <script src="script.js"></script>
-
 </body>
 </html>

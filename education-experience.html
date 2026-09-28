@@ -3,93 +3,135 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Education & Experience - YOUR NAME">
-  <title>Education & Experience | YOUR NAME</title>
+  <meta name="description" content="Education, research experience, professional experience, technical skills, awards, and service for Mohammad Tahsin.">
+  <meta name="author" content="Mohammad Tahsin">
+  <title>Education &amp; Experience | Mohammad Tahsin</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
   <script>
     (function () {
       const saved = localStorage.getItem("theme");
-      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
       document.documentElement.dataset.theme = saved || (prefersDark ? "dark" : "light");
     })();
   </script>
 </head>
 <body>
-
-<header>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header">
   <div class="container nav">
-    <a class="brand" href="index.html">YOUR NAME</a>
-    <div class="nav-actions">
-      <button class="theme-button" type="button" aria-label="Switch color theme" title="Switch color theme">☾</button>
-      <button class="menu-button" aria-label="Open navigation" aria-expanded="false">☰</button>
-    </div>
-    <ul class="nav-links">
+    <a class="brand" href="index.html" aria-label="Mohammad Tahsin home">Mohammad Tahsin</a>
+    <ul class="nav-links" id="primary-navigation">
       <li><a href="index.html">Home</a></li>
       <li><a href="publications.html">Publications</a></li>
-      <li><a href="education-experience.html">Education & Experience</a></li>
+      <li><a href="education-experience.html">Education &amp; Experience</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="cv.html">CV</a></li>
     </ul>
+    <div class="nav-actions">
+      <button class="theme-button" type="button" aria-label="Switch to dark mode" title="Switch color theme">☾</button>
+      <button class="menu-button" type="button" aria-label="Open navigation" aria-controls="primary-navigation" aria-expanded="false">☰</button>
+    </div>
   </div>
 </header>
-
-
-<main class="container">
+<main id="main-content" class="container">
   <section class="page-title">
-    <div class="eyebrow">Background</div>
-    <h1>Education & Experience</h1>
-    <p class="lead">My academic training, research appointments, and professional experience.</p>
+    <p class="eyebrow">Background</p>
+    <h1>Education &amp; Experience</h1>
+    <p class="lead">Academic training, research appointments, professional experience, technical skills, awards, and service.</p>
   </section>
 
-  <section class="section">
-    <h2>Education</h2>
+  <section class="section two-column-section">
+    <div class="section-label"><p class="eyebrow">Education</p><h2>Academic training</h2></div>
     <div class="timeline">
       <article class="timeline-item">
-        <h3>Degree Name, Major</h3>
-        <div class="meta">University Name · City, Country · 2024–Present</div>
-        <p>Optional: thesis topic, concentration, GPA, adviser, or relevant coursework.</p>
+        <div class="timeline-date">Aug. 2026 - Present</div>
+        <h3>PhD in Engineering</h3>
+        <p class="meta">Computer Science concentration · Texas A&amp;M University-Kingsville · Kingsville, Texas</p>
       </article>
-
       <article class="timeline-item">
-        <h3>Previous Degree, Major</h3>
-        <div class="meta">University Name · City, Country · 2020–2024</div>
-        <p>Optional details about your degree, thesis, honors, or research.</p>
+        <div class="timeline-date">Jan. 2025 - Aug. 2026</div>
+        <h3>MS in Computer Science</h3>
+        <p class="meta">Texas A&amp;M University-Kingsville · Kingsville, Texas</p>
+      </article>
+      <article class="timeline-item">
+        <div class="timeline-date">May 2017 - Feb. 2022</div>
+        <h3>BS in Computer Science</h3>
+        <p class="meta">BRAC University · Dhaka, Bangladesh</p>
       </article>
     </div>
   </section>
 
-  <section class="section">
-    <h2>Research & Professional Experience</h2>
+  <section class="section two-column-section">
+    <div class="section-label"><p class="eyebrow">Research</p><h2>Research experience</h2></div>
     <div class="timeline">
       <article class="timeline-item">
-        <h3>Research Assistant</h3>
-        <div class="meta">Lab / Department / University · 2025–Present</div>
+        <div class="timeline-date">May 2025 - Present</div>
+        <h3>Graduate Research Assistant</h3>
+        <p class="meta">AI-Based Autonomous System Research Lab · Texas A&amp;M University-Kingsville</p>
         <ul class="list-clean">
-          <li>Describe the research question or project you work on.</li>
-          <li>Describe methods, datasets, software, experiments, or analysis.</li>
-          <li>Mention papers, presentations, or deliverables where appropriate.</li>
+          <li>Developed a smart-home sensor placement decision support model with GRU-based energy forecasting; the work was published at IEEE ICCE 2026.</li>
+          <li>Developed a hybrid model for heartbeat monitoring with explainable AI methods.</li>
+          <li>Investigated deep learning methods for malware detection.</li>
         </ul>
       </article>
+    </div>
+  </section>
 
+  <section class="section two-column-section">
+    <div class="section-label"><p class="eyebrow">Professional</p><h2>Industry experience</h2></div>
+    <div class="timeline">
       <article class="timeline-item">
-        <h3>Previous Position</h3>
-        <div class="meta">Organization · 2024–2025</div>
-        <ul class="list-clean">
-          <li>Describe your most important responsibility.</li>
-          <li>Describe a measurable result or technical contribution.</li>
-        </ul>
+        <div class="timeline-date">Mar. - Oct. 2024</div>
+        <h3>Credentialing Analyst</h3>
+        <p class="meta">Radiant Data Systems Ltd. · Dhaka, Bangladesh</p>
+        <p>Verified documents and coordinated with U.S. clients to resolve missing information and complete daily operational tasks.</p>
       </article>
+      <article class="timeline-item">
+        <div class="timeline-date">Feb. - June 2022</div>
+        <h3>Product Management Intern</h3>
+        <p class="meta">REDX, ShopUp · Dhaka, Bangladesh</p>
+        <p>Contributed to Google Maps and GPS-based fleet work using real-time traffic information for approximately 100 trucks.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section split-cards">
+    <article class="card">
+      <p class="eyebrow">Technical skills</p>
+      <h2>Tools &amp; methods</h2>
+      <div class="tag-list">
+        <span>Python</span><span>TensorFlow</span><span>Keras</span><span>scikit-learn</span><span>NumPy</span><span>pandas</span><span>Weka</span><span>Explainable AI</span><span>Time-series analysis</span><span>Data mining</span><span>Data visualization</span>
+      </div>
+    </article>
+    <article class="card">
+      <p class="eyebrow">Honors &amp; awards</p>
+      <h2>Recognition</h2>
+      <ul class="list-clean compact-list">
+        <li>Doctoral Fellowship, Texas A&amp;M University-Kingsville, Fall 2026 - Present</li>
+        <li>Dean's Graduate Merit Scholarship, Texas A&amp;M University-Kingsville</li>
+        <li>Research Assistantship Grant, Texas A&amp;M University-Kingsville, Fall 2025</li>
+        <li>Vice Chancellor's List, BRAC University, Summer 2020</li>
+      </ul>
+    </article>
+  </section>
+
+  <section class="section two-column-section">
+    <div class="section-label"><p class="eyebrow">Service</p><h2>Professional service</h2></div>
+    <div class="card service-card">
+      <h3>Peer reviewer</h3>
+      <p>Heliyon; Biomedical Signal Processing and Control; Intelligence-Based Medicine; Primary Care Diabetes; Systems and Soft Computing; Natural Hazards Research; Journal of Computer Science; Franklin Open; Expert Systems with Application; ICDATE 2023.</p>
+      <h3>Technical Program Committee</h3>
+      <p>IEEE ICCE 2026.</p>
     </div>
   </section>
 </main>
-
-
 <footer>
-  <div class="container">
-    © <span id="year"></span> YOUR NAME · Built with HTML/CSS and hosted on GitHub Pages.
+  <div class="container footer-inner">
+    <span>© <span id="year"></span> Mohammad Tahsin</span>
+    <span>Built with HTML, CSS, and JavaScript. Hosted with GitHub Pages.</span>
   </div>
 </footer>
 <script src="script.js"></script>
-
 </body>
 </html>

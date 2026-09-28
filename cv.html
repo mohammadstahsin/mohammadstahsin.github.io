@@ -3,67 +3,58 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="CV - YOUR NAME">
-  <title>CV | YOUR NAME</title>
+  <meta name="description" content="Curriculum vitae of Mohammad Tahsin.">
+  <meta name="author" content="Mohammad Tahsin">
+  <title>CV | Mohammad Tahsin</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
   <script>
     (function () {
       const saved = localStorage.getItem("theme");
-      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
       document.documentElement.dataset.theme = saved || (prefersDark ? "dark" : "light");
     })();
   </script>
 </head>
 <body>
-
-<header>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header">
   <div class="container nav">
-    <a class="brand" href="index.html">YOUR NAME</a>
-    <div class="nav-actions">
-      <button class="theme-button" type="button" aria-label="Switch color theme" title="Switch color theme">☾</button>
-      <button class="menu-button" aria-label="Open navigation" aria-expanded="false">☰</button>
-    </div>
-    <ul class="nav-links">
+    <a class="brand" href="index.html" aria-label="Mohammad Tahsin home">Mohammad Tahsin</a>
+    <ul class="nav-links" id="primary-navigation">
       <li><a href="index.html">Home</a></li>
       <li><a href="publications.html">Publications</a></li>
-      <li><a href="education-experience.html">Education & Experience</a></li>
+      <li><a href="education-experience.html">Education &amp; Experience</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="cv.html">CV</a></li>
     </ul>
+    <div class="nav-actions">
+      <button class="theme-button" type="button" aria-label="Switch to dark mode" title="Switch color theme">☾</button>
+      <button class="menu-button" type="button" aria-label="Open navigation" aria-controls="primary-navigation" aria-expanded="false">☰</button>
+    </div>
   </div>
 </header>
-
-
-<main class="container">
+<main id="main-content" class="container">
   <section class="page-title">
-    <div class="eyebrow">Curriculum vitae</div>
+    <p class="eyebrow">Curriculum vitae</p>
     <h1>CV</h1>
-    <p class="lead">You can view or download my current curriculum vitae below.</p>
-  </section>
-
-  <section class="section">
-    <div class="notice">
-      Replace the included <strong>cv-placeholder.pdf</strong> with your own PDF and rename it
-      <strong>cv.pdf</strong>. Then change the two links below from
-      <strong>cv-placeholder.pdf</strong> to <strong>cv.pdf</strong>.
-    </div>
-
+    <p class="lead">My current curriculum vitae includes education, research experience, publications, professional experience, technical skills, honors, and service.</p>
     <div class="actions">
-      <a class="button primary" href="cv-placeholder.pdf" target="_blank">Open CV</a>
-      <a class="button secondary" href="cv-placeholder.pdf" download>Download CV</a>
+      <a class="button primary" href="cv.pdf" target="_blank" rel="noopener noreferrer">Open CV</a>
+      <a class="button secondary" href="cv.pdf" download>Download CV</a>
     </div>
-
-    <iframe class="cv-frame" src="cv-placeholder.pdf" title="CV preview"></iframe>
+  </section>
+  <section class="section cv-section">
+    <div class="cv-note">If the embedded preview does not appear in your browser, use the Open CV button above.</div>
+    <iframe class="cv-frame" src="cv.pdf#view=FitH" title="Mohammad Tahsin curriculum vitae"></iframe>
   </section>
 </main>
-
-
 <footer>
-  <div class="container">
-    © <span id="year"></span> YOUR NAME · Built with HTML/CSS and hosted on GitHub Pages.
+  <div class="container footer-inner">
+    <span>© <span id="year"></span> Mohammad Tahsin</span>
+    <span>Built with HTML, CSS, and JavaScript. Hosted with GitHub Pages.</span>
   </div>
 </footer>
 <script src="script.js"></script>
-
 </body>
 </html>
